@@ -1,0 +1,3 @@
+import type {Metadata} from "next";import"./globals.css";
+export const metadata:Metadata={title:"Financial Variance Command Center",description:"A transparent multi-agent environment for financial variance investigation.",openGraph:{title:"Financial Variance Command Center",description:"Every variance deserves a theory.",images:["/og.png"]},twitter:{card:"summary_large_image",images:["/og.png"]}};
+export default function Layout({children}:{children:React.ReactNode}){return <html lang="en"><body style={{"--sans":"Inter, ui-sans-serif, system-ui, sans-serif","--mono":"SFMono-Regular, Consolas, monospace"} as React.CSSProperties}>{children}</body></html>}
