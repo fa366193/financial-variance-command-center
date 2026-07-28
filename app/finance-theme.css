@@ -1,0 +1,92 @@
+:root {
+  --bg: #07110f;
+  --panel: #0c1815;
+  --panel2: #11221d;
+  --line: #294238;
+  --text: #f2f0e8;
+  --muted: #9caaa3;
+  --cyan: #b7c9bf;
+  --green: #68d391;
+  --amber: #c9a968;
+  --coral: #d86f64;
+  --violet: #a99c7a;
+}
+
+body {
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(90deg, transparent 0 72%, #c9a9680a 72% 72.08%, transparent 72.08%),
+    repeating-linear-gradient(0deg, #ffffff04 0 1px, transparent 1px 32px);
+  font-variant-numeric: tabular-nums;
+}
+header { height: 72px; background: #07110ff2; border-bottom-color: #385349; box-shadow: 0 8px 30px #0005; }
+.brand { align-items: center; letter-spacing: .01em; }
+.brand i { border-color: var(--amber); color: var(--amber); background: #c9a9680d; }
+.brand small { color: #82958c; }
+.demo { border-color: #355145; background: #0d1d18; color: #7bdd9c; }
+nav { gap: .25rem; }
+nav button { border-bottom: 2px solid transparent; }
+nav button.on { color: var(--text); border-bottom-color: var(--amber); }
+.hero, .porthero { padding-top: 6rem; }
+.eyebrow, .head > p { color: var(--amber); }
+.hero h1, .porthero h1, .head h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -.045em;
+}
+.hero h1 em, .porthero h1 em, .head em { color: #8fdcab; }
+.hero > div > p:last-child, .porthero > p:last-child { color: #b7c2bc; }
+.hero aside { background: #0b1814; border: 1px solid var(--line); border-top: 3px solid var(--amber); padding: 1.5rem; }
+.hero aside strong { font-family: Georgia, "Times New Roman", serif; font-weight: 500; }
+.hero aside button { color: #89d5a4; }
+.notice { border-color: #5a4a2d; background: #18170f; color: #c7b98e; }
+.notice b { color: #d5b66e; }
+.panel { background: #0b1714f5; border-color: #2a453a; box-shadow: 0 14px 42px #0003; }
+.title { background: #0e1d19; }
+.title span { color: var(--amber); }
+.title > b { color: #7bd99b; }
+.inputs input, .inputs select { background: #07110f; border-color: #345044; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.inputs input:focus, .inputs select:focus { border-color: var(--amber); }
+.run { background: #d7c188; color: #0a1511; }
+.run:hover { background: #ead79f; }
+.progress > i { background: #72d79a; }
+.scene {
+  background:
+    linear-gradient(90deg, #ffffff03 1px, transparent 1px),
+    linear-gradient(#ffffff03 1px, transparent 1px),
+    radial-gradient(ellipse at center, #24483a4a, transparent 62%);
+  background-size: 32px 32px, 32px 32px, auto;
+}
+.board { background: #081410f2; border-color: #4f6c60; border-top: 3px solid var(--amber); box-shadow: 0 18px 45px #0008; }
+.board > span { color: var(--amber); }
+.bar > i { background: linear-gradient(90deg, #c9a968, #72d79a); }
+.bubble { background: #10231d; border-color: #365145; color: #bdc7c1; border-radius: 2px; }
+.face { border-radius: 4px; background: #0a1814; box-shadow: none; }
+.agent.active .face { box-shadow: inset 0 -3px color-mix(in srgb, var(--c) 65%, transparent), 0 0 20px color-mix(in srgb, var(--c) 12%, transparent); }
+.consensus > i > b { background: linear-gradient(90deg, #d86f64, #c9a968, #68d391); }
+.brief { background: #0b1714; border-top: 3px solid var(--amber); }
+.brief h2 { color: #8addaa; }
+.score strong { color: #e08777; }
+.metric { background: #0e1c18; }
+.metric strong, .tr { font-variant-numeric: tabular-nums; }
+.evidence article { background: #0d1b17; }
+.evidence .challenge { border-top-color: #d86f64; }
+.buttons button { background: #0a1512; }
+.buttons button:hover { border-color: var(--amber); color: var(--amber); }
+.logged { background: #10251c; }
+.sim { background: #0b1714; }
+.sim aside { background: #0e1c18; }
+.kpis { border-top: 3px solid var(--amber); background: #0b1714; }
+.queue { border-top: 3px solid var(--amber); }
+.tr:hover:not(.th) { background: #13251f; }
+.methodgrid { border-top: 3px solid var(--amber); }
+.methodgrid article { background: #0b1714; }
+.methodgrid span { color: var(--amber); }
+.drawer { background: #091612; border-left-color: #50675d; }
+.drawer article > b, footer a { color: var(--amber); }
+@keyframes pulse {
+  50% {
+    transform: translateY(-3px);
+    box-shadow: inset 0 -3px color-mix(in srgb, var(--c) 75%, transparent), 0 0 24px color-mix(in srgb, var(--c) 20%, transparent);
+  }
+}
