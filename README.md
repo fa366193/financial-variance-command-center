@@ -4,7 +4,7 @@
 
 A transparent multi-agent research prototype that extends the Site Financial Health Engine from standardized reporting into accountable variance investigation.
 
-[Launch the public application](https://fa366193.github.io/financial-variance-command-center/) · [Read the research notebook](https://decisionsystemslab.org/systems/site-financial-health-engine)
+[Launch the public application](https://fa366193.github.io/financial-variance-command-center/) · [Read the research notebook](https://decisionsystemslab.org/systems/site-financial-health-engine) · [Download the technical report](https://fa366193.github.io/financial-variance-command-center/financial-variance-command-center-technical-report.pdf) · [Watch the narrated demo](https://fa366193.github.io/financial-variance-command-center/financial-variance-command-center-video-demo.mp4)
 
 ## Agent team
 
